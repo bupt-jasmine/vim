@@ -124,6 +124,7 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " 目录树美化
 Plugin 'vim-airline/vim-airline'                 " 状态栏美化
 Plugin 'vim-airline/vim-airline-themes'          " 状态栏美化主题
 Plugin 'luochen1990/rainbow'                     " 彩虹括号
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()            
 filetype plugin indent on
@@ -134,3 +135,4 @@ filetype plugin indent on
 " 退出最后一个文件时关闭
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+colorscheme onedark
